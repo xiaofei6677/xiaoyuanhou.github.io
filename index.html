@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GIS工程师 - 简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --box-border-color: #000000;
+      --main-background: #fefbf5;
+    }
+
+    @page {
+      margin: 0
+    }
+
+    body {
+      margin: 0
+    }
+
+    .sheet {
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      page-break-after: always;
+      padding: 6mm;
+    }
+
+    body.A4 .sheet {
+      -webkit-print-color-adjust: exact;
+     
+      width: 210mm;
+      height: 296mm
+    }
+
+    @media screen {
+      body {
+        background: 
+      }
+      .sheet {
+        
+        margin: 5mm auto;
+      }
+    }
+
+    @media print {
+      body.A4 {
+        width: 210mm
+      }
+    }
+
+    .page {
+      width: 100%;
+      height: 100%;
+     
+      display: flex;
+      padding: 14mm 8mm;
+    }
+
+    .page-left-block-title {
+      text-align: left;
+      font-size: 4mm;
+      line-height: 1;
+      letter-spacing: 0.3mm;
+      margin-bottom: 6mm;
+    }
+
+    .page-right-block-title {
+      font-size: 6mm;
+      letter-spacing: 0.3mm;
+      text-align: center;
+      margin-bottom: 8mm;
+      line-height: 1;
+    }
+
+    .page-left-block-title::first-letter {
+      font-size: 6mm;
+    }
+
+    .content {
+      line-height: 6mm;
+      font-size: 3mm;
+    }
+
+    .page-left {
+      margin-right: 8mm;
+      width: 65mm;
+    
+      padding: 10mm 8mm;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page-left-block {
+      margin-bottom: 8mm;
+    }
+
+    .page-left-block .title::first-letter {
+      font-size: 6mm;
+    }
+
+    .page-right {
+      padding: 10mm 0;
+      flex: 1;
+      flex-direction: column;
+    }
+
+    .page-right-block {
+      margin-bottom: 8mm;
+    }
+
+    .seperator {
+      display: block;
+      height: 0;
+      border: solid 1mm #000000;
+      border-bottom: 0;
+      /* margin: 0 3mm; */
+    }
+
+    .head {
+      margin-bottom: 17mm;
+    }
+
+    .me {
+      text-align: center;
+      line-height: 1;
+      padding: 10mm 0;
+    }
+
+    .me .name {
+      font-size: 8mm;
+      margin-bottom: 4mm;
+      letter-spacing: 1mm;
+    }
+
+    .me .position {
+      font-size: 4mm;
+      letter-spacing: .3mm;
+    }
+
+    .content-item {
+      margin-bottom: 8mm;
+    }
+
+    .content-item-title {
+      font-size: 4mm;
+      line-height: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .content-item-title {
+      font-size: 4mm;
+      line-height: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .content-item-detail {
+      margin-top: 3mm;
+    }
+
+    .contact-item {
+      display: flex;
+      line-height: 1;
+      margin-bottom: 3mm;
+      align-items: center;
+    }
+
+    .contact-item a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .contact-item-icon {
+      margin-right: 3mm;
+    }
+
+    .content-item-title-detail {
+      font-size: 3mm;
+    }
+
+    .contact-item-icon-svg {
+      height: 5mm;
+      width: 5mm;
+    }
+
+    .content-item-title-with-icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .content-item-title-with-icon-svg {
+      transform: translateY(0.2mm);
+      margin-left: 2mm;
+      width: 4mm;
+      height: 4mm;
+    }
+
+    .content-item-tag {
+      margin-top: 3mm;
+      font-size: 3mm;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    .page-right-block .seperator {
+      margin: 0 13mm;
+    }
+  </style>
+</head>
+
+<body class="A4">
+  <section class="sheet">
+
+    <article class="page">
+      <div class="page-left">
+        <div class="head">
+          <div class="seperator"></div>
+          <div class="me">
+            <div class="name">小猿猴GISer</div>
+            <div class="position">GIS开发工程师</div>
+          </div>
+          <div class="seperator"></div>
+        </div>
+        <div class="contact page-left-block">
+          <div class="page-left-block-title">联系方式</div>
+          <div class="content">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg class="contact-item-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div>
+                <a href="https://github.com/xiaofei6677" target="_blank">https://github.com/xiaofei6677</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg class="contact-item-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>178****2297</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg class="contact-item-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <a href="mailto:name@email.com" target="_blank">wtf1993@qq.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="edu page-left-block">
+          <div class="page-left-block-title">教育背景</div>
+          <div class="content">
+            <div>@山东科技大学</br> @地图学与地理信息系统</br>@硕士</div>
+            <div>2015年9月 - 2019年6月</div>
+			<div>@山东科技大学</br> @地理信息系统  </br> @本科</div>
+            <div>2012年9月 - 2016年6月</div>
+          </div>
+        </div>
+        <div class="stack page-left-block">
+          <div class="page-left-block-title">技术栈</div>
+          <div class="content">
+            熟练使用ArcGIS、SuperMap、Qgis等桌面GIS软件。</br>熟悉 WebGIS开发、Python爬虫、数据挖掘等技术。
+          </div>
+        </div>
+      
+      </div>
+      <div class="page-right">
+        <div class="work page-right-block">
+          <div class="page-right-block-title">发表论文</div>
+          <div class="content">
+            <div class="content-item">
+              <div class="content-item">
+                Mou N, Yuan R, Yang T, et al. Exploring spatio-temporal changes of city inbound tourism flow: The case of Shanghai, China[J]. Tourism Management, 2020,76:103955.
+				<a href="https://doi.org/10.1016/j.tourman.2019.103955" target="_blank">https://doi.org/10.1016/j.tourman.2019.103955</a>
+            </div>
+            <div class="content-item">
+              Rongzheng Yuan. 2019. Spatio-temporal Changes of Tourists Based on Multi-source data in Chengdu. In Proceedings of the 2019 International Conference on Data Mining and Machine Learning (ICDMML 2019). ACM, New York, NY, USA, 120-124. DOI: <a href="https://doi.org/10.1145/3335656.3335696" target="_blank">https://doi.org/10.1145/3335656.3335696</a>
+
+            </div>
+          </div>
+          <div class="seperator"></div>
+        </div>
+        <div class="exp page-right-block">
+          <div class="page-right-block-title">项目经验</div>
+          <div class="content">
+            <div class="content-item">
+              <div class="content-item-title">
+                <div>计算基于GPS轨迹的农机作业重叠遗漏 </div>
+                <div class="content-item-title-detail">2017年6月</div>
+              </div>
+              <div class="content-item-tag">flask+mongodb+geopandas</div>
+              <div class="content-item-detail">
+			  主要项目负责人，负责后台农机GPS轨迹的计算，对农机GPS打点数据进行清洗，处理经纬度和作业深度数据，计算农机作业的有效面积，重复、遗漏耕种面积，并将结果以json格式传输给前台地图展示使用。</br>
+            </div>
+                   </br>     <div class="content-item">
+              <div class="content-item-title">
+                <div>室内混合智能定位与室内GIS技术</br>（2016YFB0502100）</div>
+                <div class="content-item-title-detail">2018年4月</div>
+              </div>
+              <div class="content-item-tag">SuperMap iMobile 9D for Android</div>
+              <div class="content-item-detail">
+			  对给定的室内导航数据进行格式转换，坐标匹配，完成移动端室内的路线规划，定位和导航功能。对建筑物点云数据处理后，能够实现移动端三维场景的离线展示和浏览，为建筑设计提供立体展示效果图。
+			  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </section>
+</body>
+
+</html>
